@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Form Tags</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>
+                お名前
+                <input type="text" value="山田太郎">
+            </label>
+        </div>
+        <div>
+            <fieldset>
+                <legend>対象の商品</legend>
+            <label><input type="checkbox" checked>商品A</label>
+            <label><input type="checkbox" checked>商品B</label>
+            <label><input type="checkbox">商品C</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>延長保証</legend>
+            <label><input type="radio" name="warranty">加入済み</label>
+            <label><input type="radio" name="warranty" checked>未加入</label>
+            <label><input type="radio" name="warranty">わからない</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <label>
+            種別
+            <select>
+                <option>商品が届かない</option>
+                <option>商品が壊れた</option>
+                <option selected>間違えて注文した</option>
+                <option>決済手段を変えたい</option>
+                <option>その他</option>
+            </select>
+        </label>
+        </div>
+
+        <div>
+            <label for="content">
+                内容
+                <textarea>こんにちは
+こんにちは</textarea>
+            </label>
+        </div> 
+        <div>
+            <button disabled>送信</button>
+            <!-- <input type="submit" value="送信"> -->
+        </div>
+    </form>
+</body>
+</html>
